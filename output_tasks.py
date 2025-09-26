@@ -19,3 +19,13 @@ print("\' Displays a single quote")
 print ("\n")
 print ("\"I am coding\"")
 
+# Display a box
+print("##########")
+print("#   ##   #")
+print("##########")
+print("#        #")
+print("##########")
+
+
+
+
