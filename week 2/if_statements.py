@@ -13,8 +13,17 @@ else: print("Performing activity")
 print("Activity complete")
 
 print("Towards what direction should I go (Up, down, left, right)?")
-if input() == "up": print("I am going up")
-elif input() == "down": print("I am going down")
-elif input() == "left": print("I am going left")
-elif input() == "right": print("I am going right")
+direction = input()
+if direction == "up": print("I am going up")
+elif direction == "down": print("I am going down")
+elif direction == "left": print("I am going left")
+elif direction == "right": print("I am going right")
+
+number = int(input("Enter a number: "))
+mod = number % 2
+if mod > 0:
+    print("The number is an odd number.")
+else:
+    print("The number is an even number.")
+
 
