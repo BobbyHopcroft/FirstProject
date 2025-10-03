@@ -32,4 +32,29 @@ else:
     elif number1 < number2: print("The second number is larger")
     elif number1 == number2: print("Both are equal!")
 
+number1 = int(input("Please enter the first number: "))
+number2 = int(input("Please enter the second number: "))
+number3 = int(input("Please enter the third number: "))
+
+even = 0
+odd = 0
+
+if number1 % 2 == 0:
+    even +=1
+else: odd+=1
+
+if number2 % 2 == 0:
+    even +=1
+else: odd+=1
+
+if number3 % 2 ==0:
+    even +=1
+else: odd+=1
+
+print("There were: ", even, "even and ", odd, "odd.")
+
+
+
+
+
 
