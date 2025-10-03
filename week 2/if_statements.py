@@ -26,4 +26,10 @@ if mod > 0:
 else:
     print("The number is an even number.")
 
+    number1 = int(input("Please enter the first number: "))
+    number2 = int(input("Please enter the second number: "))
+    if number1 > number2: print("The second number is smaller")
+    elif number1 < number2: print("The second number is larger")
+    elif number1 == number2: print("Both are equal!")
+
 
