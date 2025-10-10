@@ -14,6 +14,14 @@ while obstacles < obstacles_avoided:
     print("Avoiding...Done!: ",obstacles2," obstacles avoided.")
     obstacles = obstacles + 1
 
+bars_charged = int(input("How many bars should be charged?"))
+bars = 0
+while bars_charged > bars :
+    bars = bars + 1
+    print("Charging..." + "I" * bars)
+
+if bars_charged == bars :
+    print("The battery is fully charged")
 
 
 
