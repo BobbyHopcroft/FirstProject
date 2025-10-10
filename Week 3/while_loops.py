@@ -23,6 +23,13 @@ while bars_charged > bars :
 if bars_charged == bars :
     print("The battery is fully charged")
 
+letter = str(input("What is your phrase?"))
+letter_count = len(letter)
+i = 0
+while i < letter_count :
+    print("Hi " * letter_count)
+    i = i + letter_count
+
 
 
 
