@@ -48,18 +48,35 @@ import fileinput
 # run_task2()
 
 
-def search(file_name):
+# def search(file_name):
+#     print("Searching...")
+#     with open(file_name) as file:
+#         for line in file:
+#             location = line.strip()
+#             print(f"Looked in {location}")
+#         print("Done")
+#
+# def run_task3():
+#     search('libary.txt')
+#
+# run_task3()
+
+def search_books(file_name):
     print("Searching...")
+    sections = ""
+    books = "Books:/n"
     with open(file_name) as file:
         for line in file:
-            location = line.strip()
-            print(f"Looked in {location}")
-        print("Done")
+            if line.strip() == "Section":
+                line.strip() + sections
+            else: line.strip() + books
+            file.close()
+            print("Done")
+            print(f"Sections: {sections} books: {books}")
+search_books("books.txt")
 
-def run_task3():
-    search('libary.txt')
 
-run_task3()
+
 
 
 
