@@ -1,3 +1,5 @@
+
+
 import matplotlib.pyplot as plt
 
 
@@ -12,28 +14,45 @@ import matplotlib.pyplot as plt
 # run_task1()
 
 
-def small():
-    x = [3,4,4,3,3]
-    y = [3,3,4,4,3]
-    plt.plot(x,y,'o--r')
+# def small():
+#     x = [3,4,4,3,3]
+#     y = [3,3,4,4,3]
+#     plt.plot(x,y,'o--r')
+#
+#
+# def medium():
+#     x = [2,5,5,2,2]
+#     y = [2,2,5,5,2]
+#     plt.plot(x,y,'o--g')
+#
+# def large():
+#     x = [1,6,6,1,1]
+#     y = [1,1,6,6,1]
+#     plt.plot(x,y,'o-b')
+#
+# small()
+# medium()
+# large()
+# plt.show()
 
+def coordinate():
+    x = input("Enter an X value")
+    y = input("Enter an Y value")
+    return x,y
 
-def medium():
-    x = [2,5,5,2,2]
-    y = [2,2,5,5,2]
-    plt.plot(x,y,'o--g')
+def path():
+    print("Retrieving Path...")
+    x_values = []
+    y_values = []
+    for _ in range(4):
+        data = coordinate()
+        x_values.append(data[0])
+        y_values.append(data[1])
+    return [x_values, y_values]
 
-def large():
-    x = [1,6,6,1,1]
-    y = [1,1,6,6,1]
-    plt.plot(x,y,'o-b')
+def run_task3():
+    values = path()
+    plt.plot(values[0], values[1],'ro--')
 
-
-
-
-
-
-small()
-medium()
-large()
+run_task3()
 plt.show()
